@@ -14,6 +14,7 @@
     <button name= "backup" type="submit">ok</button>
 
     <?php
+    if(isset($_POST['backup'])):
         $file = $_POST['OrigArquivo'];
         $newfile = $_POST['DestArquivo'];
 
@@ -21,7 +22,7 @@
             echo "falha ao copiar $file...\n";
             
         }
-        
+    endif;
     ?>
     
 </body>
