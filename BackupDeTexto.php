@@ -19,7 +19,7 @@
 
         if (!copy($file, $newfile)) {
             echo "falha ao copiar $file...\n";
-            header('Location: index.html');
+            
         }
         
     ?>
